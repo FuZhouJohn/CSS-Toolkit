@@ -1,0 +1,45 @@
+*{margin:0;padding: 0;}
+*{box-sizing: border-box;}
+.imageWapper{
+    width: 500px;
+    height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, .5);
+    margin: 0 auto;
+    position: relative;
+}
+.imageWapper img{
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.imageWapper input[type=file]{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+.imageWapper .mask{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    background-color: rgba(0,0,0,.5);
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.imageWapper:hover .mask{
+    display: flex;
+}
