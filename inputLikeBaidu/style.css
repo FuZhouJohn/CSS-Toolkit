@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100%; 兼容IE8 */
+}
+html{
+  /* height: 100%; 兼容IE8 */
+}
+
+
+.wrapper{
+  display: flex;
+}
+.inputWrapper{
+  position: relative;
+  display: inline-block;
+}
+.inputWrapper>input[type='text']{
+  height: 40px;
+  line-height: 40px;
+  width: 544px;
+  border: 1px solid #b8b8b8;
+  font-size: 17px;
+  padding-left: 8px;
+}
+.inputWrapper>input[type='text']:focus{
+  outline: none;
+  border:1px solid #4791ff;
+}
+.floatDiv{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.options{
+  display: none;
+}
