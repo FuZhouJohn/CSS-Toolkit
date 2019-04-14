@@ -30,8 +30,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 810px;
-  min-height: 600px;
 }
 
 .z-button {
