@@ -63,14 +63,14 @@ body {
   background-color: #acacac;
   border-radius: 50%;
   z-index: -1;
-  animation: test 0.5s linear;
+  animation: click 0.45s linear;
 }
 
-@keyframes test {
+@keyframes click {
   0% {
     transform: scale(0);
   }
-  70% {
+  60% {
     transform: scale(200);
     opacity: 1;
   }

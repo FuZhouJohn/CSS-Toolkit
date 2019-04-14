@@ -12,6 +12,7 @@ zButton.onclick = function(e){
     mask.className = 'mask'
     mask.addEventListener('animationend',function(e){
         e.target.remove()
+        zButton.blur()
     })
     e.target.append(mask)
 }
