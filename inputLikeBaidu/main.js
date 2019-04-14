@@ -26,3 +26,11 @@ keyWordsInput.oninput = function (e) {
         options.classList.remove('active')
     }
 }
+keyWordsInput.onfocus = function(e){
+    if (e.target.value) {
+        options.classList.add('active')
+    }
+}
+keyWordsInput.onblur = function(){
+    options.classList.remove('active')
+}
