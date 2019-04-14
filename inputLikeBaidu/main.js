@@ -12,10 +12,9 @@ keyWordsInput.oninput = function (e) {
         for (let i = 0; i < 4; i++) {
             keywords.push(e.target.value + '测试' + i)
         }
-        
+
         let reg = new RegExp("^(" + e.target.value + ")", 'ig');
         for (let i = 0; i < keywords.length; i++) {
-            console.log(reg)
             let str = keywords[i];
             let n = str.replace(reg, '<b>' + e.target.value + '</b>')
             let li = document.createElement('li')
