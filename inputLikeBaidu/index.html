@@ -7,26 +7,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>模仿百度搜索框</title>
     <link rel="stylesheet" href="style.css">
+    <script src="//at.alicdn.com/t/font_1141129_k312q22lk0d.js"></script>
 </head>
 
 <body>
     <div class="wrapper">
         <span class="inputWrapper">
             <span class="floatDiv">
-                <button>mic</button>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-mic"></use>
+                </svg>
                 <span class="dividingLine"></span>
-                <button>camera</button>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-camera"></use>
+                </svg>
             </span>
-            <input type="text">
+            <input type="text" id='keyWordsInput'>
         </span>
-        <button>百度一下</button>
-        <ul class='options'>
-            <li>选项1</li>
-            <li>选项2</li>
-            <li>选项3</li>
-            <li>选项4</li>
+        <button class='searchButoon'>百度一下</button>
+        <ul id='options' class='options'>
         </ul>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>

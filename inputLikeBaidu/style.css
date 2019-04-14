@@ -7,50 +7,122 @@
   box-sizing: border-box;
 }
 
-*::before, *::after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-ul, ol {
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+ul,
+ol {
   list-style: none;
 }
 
-body{
+body {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   /* min-height: 100%; 兼容IE8 */
 }
-html{
+html {
   /* height: 100%; 兼容IE8 */
 }
 
-
-.wrapper{
+.wrapper {
   display: flex;
+  position: relative;
 }
-.inputWrapper{
+.inputWrapper {
   position: relative;
   display: inline-block;
 }
-.inputWrapper>input[type='text']{
+.inputWrapper > input[type="text"] {
   height: 40px;
   line-height: 40px;
   width: 544px;
-  border: 1px solid #b8b8b8;
+  border: 1px solid #cccccc;
+  border-right: none;
   font-size: 17px;
   padding-left: 8px;
 }
-.inputWrapper>input[type='text']:focus{
+
+.inputWrapper > input[type="text"]:hover {
+  border: 1px solid #b3b3b3;
+  border-right: none;
+}
+.inputWrapper > input[type="text"]:focus {
   outline: none;
-  border:1px solid #4791ff;
+  border: 1px solid #4791ff;
+  border-right: none;
 }
-.floatDiv{
+
+.floatDiv {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1px;
+  right: 1px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 8px;
 }
-.options{
+
+.floatDiv .icon {
+  fill: #999999;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.floatDiv .icon:hover {
+  fill: #4791ff;
+}
+
+.dividingLine {
+  margin: 0 8px;
+  width: 0;
+  height: 20px;
+  border-left: 1px solid #999999;
+}
+
+.searchButoon {
+  border: none;
+  background: none;
+  background-color: #3385ff;
+  line-height: 40px;
+  color: #fff;
+  font-size: 15px;
+  padding: 0 18px;
+}
+.searchButoon:hover {
+  background-color: #317ef3;
+  box-shadow: 1px 1px 1px #ccc;
+  border-bottom: #2868c8;
+}
+.options {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border: 1px solid #cccccc;
+  border-top: none;
+  width: 544px;
+}
+.options.active{
+  display: block;
+}
+.options > li {
+  padding-left: 8px;
+  line-height: 25px;
+  font-size: 14px;
+}
+.options > li:hover{
+  background-color: #f0f0f0;
 }
