@@ -3,4 +3,6 @@
 
 仿百度搜索输入框：[去试试](https://fuzhoujohn.github.io/CSS-Toolkit/inputLikeBaidu/)
 
-仿Vuetify按钮：[去试试](https://fuzhoujohn.github.io/CSS-Toolkit/flatButton/)
+仿 Vuetify 按钮：[去试试](https://fuzhoujohn.github.io/CSS-Toolkit/flatButton/)
+
+jQuery 简单轮播：[去试试](https://fuzhoujohn.github.io/CSS-Toolkit/swiper/)
