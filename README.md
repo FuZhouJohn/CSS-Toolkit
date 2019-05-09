@@ -6,3 +6,5 @@
 仿 Vuetify 按钮：[去试试](https://fuzhoujohn.github.io/CSS-Toolkit/flatButton/)
 
 jQuery 简单轮播：[去试试](https://fuzhoujohn.github.io/CSS-Toolkit/swiper/)
+
+jQuery 无缝轮播：[去试试](https://fuzhoujohn.github.io/CSS-Toolkit/swiper2/)
