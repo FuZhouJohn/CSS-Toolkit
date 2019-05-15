@@ -9,28 +9,20 @@
 .window {
     width: 400px;
     height: 300px;
-    margin: 20px auto;
     overflow: hidden;
 }
-.images {
-    position: relative;
+.container {
+    margin: 20px auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
+.images {
+    display: flex;
+    transform: translateX(-400px);
+    transition: all 1s;
+}
 .images > img {
     width: 100%;
-    position: absolute;
-    top: 0;
-    transition: all 0.5s;
-}
-
-.images > img.wait {
-    transform: translateX(100%);
-}
-.images > img.active {
-    transform: translateX(0);
-    z-index: 1;
-}
-.images > img.leave {
-    transform: translateX(-100%);
-    z-index: 1;
 }
