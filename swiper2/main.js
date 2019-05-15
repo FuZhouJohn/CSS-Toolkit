@@ -1,13 +1,23 @@
-let $buttons = $("#buttonWrapper>button");
 let $slides = $("#slides");
 let $images = $slides.children();
 let current = 0;
+
 makeFakeImage();
+buttonInit();
+
+let $buttons = $("#buttonWrapper>button");
+
 bindEvents();
 
 let timer = setInterval(() => {
     goToSlide(current + 1);
 }, 2000);
+
+function buttonInit() {
+    for (let i = 0; i < $images.length; i++) {
+        $("#buttonWrapper").append($("<button></button>").text(i + 1));
+    }
+}
 
 function makeFakeImage() {
     let $firstCopy = $images.eq(0).clone(true);
@@ -16,7 +26,9 @@ function makeFakeImage() {
     $slides.append($firstCopy);
     $slides.prepend($lastCopy);
 }
+
 function bindEvents() {
+    console.log($buttons);
     $buttons.on("click", e => {
         let $button = $(e.currentTarget);
         let index = $button.index();
